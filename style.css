@@ -1,0 +1,204 @@
+/* import google font - poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar,.nav-items-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav-items-list{
+    column-gap: 25px;
+}
+
+.logo{
+    font-size: 30px;
+    color: #faf1ff;
+    text-transform: uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link{
+    color: #faf1ff;
+    font-size: 18px;
+}
+.nav-link:hover{
+    color:#9526da;
+}
+
+.btn-login{
+    padding: 6px 24px;
+    border: 2px solid #faf1ff;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #faf1ff;
+}
+.btn-login:active{
+    transform: scale(0.98);
+    border: 2px solid #9526da;
+    color: #9526da;
+}
+
+/* HOME */
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("prp.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* FORM */
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.5;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: #4e0b77;
+    font-weight: 600;
+}
+
+.input-box{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1.5px solid #4e0b77;
+    outline: none;
+    padding: 0 25px;
+    transition: all 0.1s ease;
+}
+
+.input-box input:focus{
+    border-bottom: 2.5px solid #9526da;
+}
+.input-box input:focus ~ .uil-envelope,
+.input-box input:focus ~ .uil-lock{
+    color: #9526da;
+}
+
+.input-box i{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-40%);
+    font-size: 20px;
+}
+
+.input-box .uil-envelope, .uil-lock{
+    left: 0;
+    color: #4e0b77;
+}
+.uil-eye-slash{
+    color: #4e0b77;
+    cursor: pointer;
+    right: 0;
+    font-size: 18px;
+}
+.input-box ::placeholder{
+    color: #4e0b77;
+}
+
+.option-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.checkbox{
+    display: flex;
+    white-space: nowrap;
+    column-gap: 8px;
+    cursor: pointer;
+}
+.checkbox input{
+    cursor: pointer;
+    accent-color: #9526da;
+}
+
+.form-container a{
+    font-size: 14px;
+    color: #9526da;
+}
+
+.checkbox label{
+    font-size: 14px;
+    user-select: none;
+    color: #4e0b77;
+}
+
+.button{
+    width: 100%;
+    background-color: #9526da;  
+    color: #fff;  
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.have-account{
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup-form{
+    display: none;
+}
